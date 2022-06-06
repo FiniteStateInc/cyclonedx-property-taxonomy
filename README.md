@@ -12,8 +12,9 @@ For more information about CycloneDX property taxonomies, refer to the [official
 
 ## `finitestate:sbom` Namespace Taxonomy
 
-| Property Name                    | Description                                                                                                            |
-| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| `finitestate:sbom:sbom_entry_id` | The Finite State-specific identifier for the given entry in the SBOM. Formatted as a 64-character alphanumeric string. |
-| `finitestate:sbom:component_id`  | The Finite State-specific ID for the given component. Formatted as a 64-character alphanumeric string.                 |
-| `finitestate:sbom:confidence`    | The 0.0 - 1.0 confidence value that Finite State analysis has assigned to this component.                              |
+| Property Name                     | Description                                                                                                            |
+| --------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| `finitestate:sbom:component_type` | Type of the component as listed in the Finite State SBOM (such as package, subcomponent, or kernel module)             |
+| `finitestate:sbom:sbom_entry_id`  | The Finite State-specific identifier for the given entry in the SBOM. Formatted as a 64-character alphanumeric string. |
+| `finitestate:sbom:component_id`   | The Finite State-specific ID for the given component. Formatted as a 64-character alphanumeric string.                 |
+| `finitestate:sbom:confidence`     | The 0.0 - 1.0 confidence value that Finite State analysis has assigned to this component.                              |
