@@ -6,9 +6,19 @@ For more information about CycloneDX property taxonomies, refer to the [official
 
 ## `finitestate` Namespace Taxonomy
 
-| Namespace          | Description                                                                  |
-| ------------------ | ---------------------------------------------------------------------------- |
-| `finitestate:sbom` | Namespace for all Finite State-specific properties dealing with SBOM values. |
+| Namespace              | Description                                                                                                             |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `finitestate:metadata` | Namespace for all Finite State-specific properties dealing with top-level metadata values about products and firmwares. |
+| `finitestate:sbom`     | Namespace for all Finite State-specific properties dealing with SBOM values.                                            |
+
+## `finitestate:metadata` Namespace Taxonomy
+
+| Property Name                              | Description                                                                              |
+| ------------------------------------------ | ---------------------------------------------------------------------------------------- |
+| `finitestate:metadata:organization_id`     | Internal Finite State identifier for the organization that uploaded the given firmware   |
+| `finitestate:metadata:product_firmware_id` | Internal Finite State identifier for relationship between the given product and firmware |
+| `finitestate:metadata:product_id`          | Internal Finite State identifier for product the SBOM applies to                         |
+| `finitestate:metadata:firmware_id`         | Internal Finite State identifier for firmware the SBOM applies to                        |
 
 ## `finitestate:sbom` Namespace Taxonomy
 
