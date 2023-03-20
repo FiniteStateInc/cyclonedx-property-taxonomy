@@ -10,6 +10,7 @@ For more information about CycloneDX property taxonomies, refer to the [official
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | `finitestate:metadata` | Namespace for all Finite State-specific properties dealing with top-level metadata values about products and firmwares. |
 | `finitestate:sbom`     | Namespace for all Finite State-specific properties dealing with SBOM values.                                            |
+| `finitestate:finding`  | Namespace for all Finite State-specific properties dealing with 'Finding' / vulnerability values.                       |
 
 ## `finitestate:metadata` Namespace Taxonomy
 
@@ -28,3 +29,15 @@ For more information about CycloneDX property taxonomies, refer to the [official
 | `finitestate:sbom:sbom_entry_id`  | The Finite State-specific identifier for the given entry in the SBOM. Formatted as a 64-character alphanumeric string. |
 | `finitestate:sbom:component_id`   | The Finite State-specific ID for the given component. Formatted as a 64-character alphanumeric string.                 |
 | `finitestate:sbom:confidence`     | The 0.0 - 1.0 confidence value that Finite State analysis has assigned to this component.                              |
+
+## `finitestate:finding` Namespace Taxonomy
+
+These properties will only appear on `vulnerability` entries in Finite State-produced CycloneDX documents.
+
+| Property Name                                | Description                                                                 |
+| -------------------------------------------- | --------------------------------------------------------------------------- |
+| `finitestate:finding:affected_file_path`     | The file path affected by the vulnerability entry.                          |
+| `finitestate:finding:affected_file_hash`     | The SHA256 of the contents of the file affected by the vulnerability entry. |
+| `finitestate:finding:affected_function_name` | The name of the funciton directly affected by the vulnerability.            |
+| `finitestate:finding:affected_line_number`   | The line number in the specified file at which the vulnerability occurs.    |
+| `finitestate:finding:affected_file_offset`   | The offset into the given file at which the vulnerability occurs.           |
