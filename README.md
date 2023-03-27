@@ -29,6 +29,17 @@ For more information about CycloneDX property taxonomies, refer to the [official
 | `finitestate:sbom:sbom_entry_id`  | The Finite State-specific identifier for the given entry in the SBOM. Formatted as a 64-character alphanumeric string. |
 | `finitestate:sbom:component_id`   | The Finite State-specific ID for the given component. Formatted as a 64-character alphanumeric string.                 |
 | `finitestate:sbom:confidence`     | The 0.0 - 1.0 confidence value that Finite State analysis has assigned to this component.                              |
+| `finitestate:sbom:comments`       | Stringified JSON list of dictionaries containing comments made on this component in the Finite State analysis UI.      |
+| `finitestate:sbom:resolutions`    | Stringified JSON list of dictionaries containing resolutions made on this component in the Finite State analysis UI.   |
+
+## `finitestate:vulnerability` Namespace Taxonomy
+
+| Property Name                     | Description                                                                                                                                        |
+| --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `finitestate:vulnerability:confidence`  | The 0.0 - 1.0 confidence value that Finite State analysis has assigned to this vulnerability.                                                |
+| `finitestate:vulnerability:evidence`    | Stringified JSON dictionary of the evidence (CPE, PURL, etc) used by Finite State analysis to determine applicability of this vulnerability. |
+| `finitestate:vulnerability:comments`    | Stringified JSON list of dictionaries containing comments made on this vulnerability in the Finite State analysis UI.                        |
+| `finitestate:vulnerability:resolutions` | Stringified JSON list of dictionaries containing resolutions made on this vulnerability in the Finite State analysis UI.                     |
 
 ## `finitestate:finding` Namespace Taxonomy
 
