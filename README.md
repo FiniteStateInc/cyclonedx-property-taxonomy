@@ -47,6 +47,7 @@ These properties will only appear on `vulnerability` entries in Finite State-pro
 
 | Property Name                                | Description                                                                 |
 | -------------------------------------------- | --------------------------------------------------------------------------- |
+| `finitestate:finding:title`                  | A human-readable, context-aware title for the vulnerability                 |
 | `finitestate:finding:affected_file_path`     | The file path affected by the vulnerability entry.                          |
 | `finitestate:finding:affected_file_hash`     | The SHA256 of the contents of the file affected by the vulnerability entry. |
 | `finitestate:finding:affected_function_name` | The name of the funciton directly affected by the vulnerability.            |
